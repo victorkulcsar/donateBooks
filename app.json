@@ -1,0 +1,12 @@
+{
+  "name": "donateBooks",
+  "displayName": "donateBooks",
+  "expo": {
+    "name": "donateBooks",
+    "slug": "donateBooks",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
