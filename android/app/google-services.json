@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "686541399469",
+    "firebase_url": "https://repasse-livros.firebaseio.com",
+    "project_id": "repasse-livros",
+    "storage_bucket": "repasse-livros.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686541399469:android:e9bdd93295284ebca7ed24",
+        "android_client_info": {
+          "package_name": "com.donatebooks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686541399469-vab5umg2ql2ksvgv6ponu00j62d5808n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.donatebooks",
+            "certificate_hash": "f733e951ecb10fd54dacd33ef421a76a944b17d3"
+          }
+        },
+        {
+          "client_id": "686541399469-nvk6vdtigcf9i5bte36asvengcsc3145.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMeagdyuJOcmi1cZqlbsF2dkWVtUbL92A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686541399469-nvk6vdtigcf9i5bte36asvengcsc3145.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

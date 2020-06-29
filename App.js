@@ -1,14 +1,50 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import firebase from 'firebase';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+class App extends React.Component {
+
+  UNSAFE_componentWillMount() {
+    var firebaseConfig = {
+      apiKey: "AIzaSyAlmNOXn-DKKP6ibxgnRFzWePkxyn_u5ao",
+      authDomain: "repasse-livros.firebaseapp.com",
+      databaseURL: "https://repasse-livros.firebaseio.com",
+      projectId: "repasse-livros",
+      storageBucket: "repasse-livros.appspot.com",
+      messagingSenderId: "686541399469",
+      appId: "1:686541399469:web:38464e4b0e79a91fa7ed24",
+      measurementId: "G-LR74MWP5SS"
+    };
+    // Initialize Firebase
+    if (!firebase.apps.length) {
+      firebase.initializeApp(firebaseConfig);
+    }
+    //firebase.analytics;
+
+    firebase.database().ref('users/001').set(
+      {
+        name: 'Victor',
+        age: 33
+      }).then(() => {
+        console.log('INSERTED')
+      }).catch((error) =>{}
+      
+      );
+
+
+  }
+
+  render() {
+
+    return (
+      <View style={styles.container}>
+        <Text>Hello world react - Victor 1234</Text>
+        <StatusBar style="auto" />
+      </View>
+    );
+  }
+
 }
 
 const styles = StyleSheet.create({
@@ -19,3 +55,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App;
