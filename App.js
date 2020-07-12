@@ -22,6 +22,9 @@ class App extends React.Component {
     }
     //firebase.analytics;
 
+    //set timeout
+    // to update, change set to update
+    // to delete use remove
     firebase.database().ref('users/001').set(
       {
         name: 'Victor',
@@ -32,6 +35,12 @@ class App extends React.Component {
       
       );
 
+      //once or on
+      firebase.database().ref('users').once('value', (data) => {
+        const dado = data.toJSON();  
+        console.log(dado);
+      })
+
 
   }
 
@@ -39,7 +48,7 @@ class App extends React.Component {
 
     return (
       <View style={styles.container}>
-        <Text>Hello world react - Victor 1234</Text>
+        <Text>Hello world react - Victor 1234567 </Text>
         <StatusBar style="auto" />
       </View>
     );
